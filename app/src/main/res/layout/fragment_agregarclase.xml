@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222125  ">
+
+    <FrameLayout
+        android:layout_width="351dp"
+        android:layout_height="669dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="338dp"
+            android:layout_height="655dp">
+
+            <TextView
+                android:id="@+id/txtAgregar"
+                android:layout_width="210dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/agregar"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#F2F1EA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spnTipoC"
+                android:layout_width="210dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:background="#F2F1EA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnEntrenador" />
+
+            <Spinner
+                android:id="@+id/spnHora"
+                android:layout_width="210dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:background="#F2F1EA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnTipoC" />
+
+            <TextView
+                android:id="@+id/txtEntrenador"
+                android:layout_width="64dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/Horario"
+                android:textAlignment="center"
+                android:textColor="#3C3D37  "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.233"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnHora" />
+
+            <CalendarView
+                android:id="@+id/cV"
+                android:layout_width="210dp"
+                android:layout_height="300dp"
+                android:background="#F2F1EA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEntrenador" />
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="#222125  "
+                android:text="@string/agregar2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cV"
+                app:layout_constraintVertical_bias="0.437" />
+
+            <Button
+                android:id="@+id/btnRegresar"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#222125  "
+                android:text="Regresar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.804"
+                app:layout_constraintStart_toEndOf="@+id/btnAgregar"
+                app:layout_constraintTop_toTopOf="@+id/btnAgregar" />
+
+            <Spinner
+                android:id="@+id/spnEntrenador"
+                android:layout_width="210dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:background="#F2F1EA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAgregar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_clases_admin"
+            android:icon="@drawable/ic_classes"
+            android:iconTint="@color/raisin_black"
+            android:title="Clases" />
+
+        <item android:id="@+id/nav_reportes"
+            android:icon="@drawable/ic_reports"
+            android:iconTint="@color/raisin_black"
+            android:title="Reportes de Desempeño" />
+
+        <item android:id="@+id/nav_inventario_dueno"
+            android:icon="@drawable/ic_inventory"
+            android:iconTint="@color/raisin_black"
+            android:title="Inventario" />
+
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Cerrar sesión" />
+    </group>
+</menu>

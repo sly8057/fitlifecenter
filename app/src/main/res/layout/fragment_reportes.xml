@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#222125"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="1.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+tools:context=".ui.reportes.ReportesFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingTop="35dp"
+    android:paddingRight="25dp"
+    android:paddingBottom="35dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_radius_card"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/txtEntrenador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbEntrenador"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/entrenador1"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtEntrenador"
+            app:layout_constraintTop_toTopOf="@+id/txtEntrenador" />
+
+        <TextView
+            android:id="@+id/txtFechaEval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/lbEval"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txtEntrenador"
+            app:layout_constraintTop_toBottomOf="@+id/txtEntrenador" />
+
+        <TextView
+            android:id="@+id/txtMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Febrero"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtFechaEval"
+            app:layout_constraintTop_toTopOf="@+id/txtFechaEval" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:isIndicator="true"
+            android:rating="3"
+            android:stepSize="1"
+            android:theme="@style/RatingBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFechaEval" />
+
+        <TextView
+            android:id="@+id/txtNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metrica de 20 clases*"
+            android:textColor="#F2F1EA"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/ratingBar"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_radius_card"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/txtEntrenador1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbEntrenador"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/entrenador2"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtEntrenador1"
+            app:layout_constraintTop_toTopOf="@+id/txtEntrenador1" />
+
+        <TextView
+            android:id="@+id/txtFechaEval1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/lbEval"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txtEntrenador1"
+            app:layout_constraintTop_toBottomOf="@+id/txtEntrenador1" />
+
+        <TextView
+            android:id="@+id/txtMes1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Marzo"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtFechaEval1"
+            app:layout_constraintTop_toTopOf="@+id/txtFechaEval1" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:isIndicator="true"
+            android:rating="3"
+            android:stepSize="1"
+            android:theme="@style/RatingBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFechaEval1" />
+
+        <TextView
+            android:id="@+id/txtNote1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metrica de 39 clases*"
+            android:textColor="#F2F1EA"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/ratingBar1"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar1"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_radius_card"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/txtEntrenador2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbEntrenador"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/entrenador3"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtEntrenador2"
+            app:layout_constraintTop_toTopOf="@+id/txtEntrenador2" />
+
+        <TextView
+            android:id="@+id/txtFechaEval2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/lbEval"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txtEntrenador2"
+            app:layout_constraintTop_toBottomOf="@+id/txtEntrenador2" />
+
+        <TextView
+            android:id="@+id/txtMes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Abril"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtFechaEval2"
+            app:layout_constraintTop_toTopOf="@+id/txtFechaEval2" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:isIndicator="true"
+            android:rating="3"
+            android:stepSize="1"
+            android:theme="@style/RatingBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFechaEval2" />
+
+        <TextView
+            android:id="@+id/txtNote2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metrica de 12 clases*"
+            android:textColor="#F2F1EA"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/ratingBar2"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar2"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_radius_card"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/txtEntrenador3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbEntrenador"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/entrenador4"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtEntrenador3"
+            app:layout_constraintTop_toTopOf="@+id/txtEntrenador3" />
+
+        <TextView
+            android:id="@+id/txtFechaEval3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/lbEval"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txtEntrenador3"
+            app:layout_constraintTop_toBottomOf="@+id/txtEntrenador3" />
+
+        <TextView
+            android:id="@+id/txtMes3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Noviembre"
+            android:textColor="#F2F1EA"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtFechaEval3"
+            app:layout_constraintTop_toTopOf="@+id/txtFechaEval3" />
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:isIndicator="true"
+            android:rating="3"
+            android:stepSize="1"
+            android:theme="@style/RatingBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFechaEval3" />
+
+        <TextView
+            android:id="@+id/txtNote3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metrica de x clases*"
+            android:textColor="#F2F1EA"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/ratingBar3"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar3"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
+</ScrollView>
